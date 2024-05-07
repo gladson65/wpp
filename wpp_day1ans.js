@@ -12,7 +12,7 @@ let seconds = new Date().getSeconds();
 // check AM or PM 
 let format = hours >= 12 ? 'PM' : 'AM';
 
-// Live Time
+// Live Time replace 12 when it'll be 00
 hours = hours % 12;
 hours = hours ? hours : 12;
 // if minutes and seconds less than 0 then 0 at first place
