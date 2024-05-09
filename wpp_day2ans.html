@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPP_day2_ans</title>
+</head>
+<body>
+    <section>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+
+        <button id="print">Print The Screen</button>
+    </section>
+
+
+
+    <!-- eternal script -->
+    <script>
+        // select the print button
+        const button = document.getElementById("print");
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            // print the screen
+            console.log(window.print())
+        })
+    </script>
+</body>
+</html>
