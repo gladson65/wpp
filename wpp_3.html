@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+         // takes input from the user
+        let userInput = prompt("Guess the Number: ");
+        let userNumber = Math.round(Number(userInput));
+        // generates a random number
+        let randomNumber = Math.round(Math.random() * 10);
+
+        if (userNumber === randomNumber) {
+            console.log("Good Work");
+
+        }
+        else {
+            console.log("Not Matched")
+            
+            setTimeout(() => {
+                location.reload();    
+            }, 1000);
+            
+        }
+
+    </script>
+</body>
+</html>
