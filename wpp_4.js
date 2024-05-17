@@ -27,5 +27,4 @@ function nextChristmas() {
 // current date
 let today = new Date(`${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`);
 
-
-nextChristmas(today)
+nextChristmas(today);
